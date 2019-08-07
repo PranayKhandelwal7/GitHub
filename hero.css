@@ -1,0 +1,65 @@
+body{
+	margin: 0; 	font-size: 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 30px
+
+}
+header {
+	background-color: lightyellow;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h1, h2{
+	font-family: 'Saira Stencil One', cursive;
+	
+}
+header h1{
+	color: crimson;
+	font-size: 40px
+	
+}
+h2 {
+	padding-top: : 20px;
+	margin: 40px 0 10px;
+}
+header img{
+	border-radius: 200px;
+	width: 200px;
+	border: 10px solid lavender
+}
+
+main{  max-width: 800px;
+ 	margin: 0 auto;
+ 	padding: 0 20px 20px 100px;
+ 	background-color:  lavender;
+		}
+
+
+main img { max-width: 100%;}
+
+h2 {
+	font-size: 35px;
+	color : crimson;
+}
+
+a{
+	color: crimson;
+}
+a:hover{
+	color: crimson;
+	background-color: lightcyan;
+}
+
+footer {
+	background-color: lightyellow;
+	text-align: center;
+	}
+p.caption{color: grey;
+		 font-style: italic;
+		 margin: 0;}
+
+
+
+
+
