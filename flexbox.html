@@ -8,8 +8,13 @@
     <style>
         #container {
             display: flex;
-           flex-flow: row wrap;
-           justify-content: space-evenly;
+            width: 600px;
+            height: 100vh;
+           /* flex-flow: row wrap; */
+           /* justify-content: space-between;
+           align-items: center; */
+           background: lightgreen;
+        /* align-content: space-around; */
         }
 
 
@@ -18,24 +23,20 @@
         padding: 30px;
         margin: 10px;
         text-align: center;
+        /* flex-basis: 160px; */
+      flex: 1 1 auto;
+      }
         
-    }
         </style>
 </head>
 <body>
     <div id="container">
-        <div class="item">Item 1</div>
+        <div class="item"> Item 1</div>
         <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-    </div>
+        <div class="item" style="align-self: baseline">Item 3</div>
+        <div class="item">>Item 4</div>
+</div>
+
 </body>
 </html>
+
