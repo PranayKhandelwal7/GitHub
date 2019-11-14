@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+</head>
+<body>
+    <style>        #container {
+        display: grid;
+       background: lightgreen;
+       grid-template-areas: "header header"
+                            "content sidebar"
+                            "footer footer";
+       grid-template-columns: 3fr 1fr;
+       grid-template-rows: 1fr 3fr 1fr;
+     grid-gap: 10px;
+
+    /* align-content: space-around; */
+    }
+header {
+    grid-row: header;
+    grid-column: header;
+}
+
+main {
+    grid-row: content;
+    grid-column: content;
+    display: grid;
+    grid-gap: 5px;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1fr) */
+    height: 1200px;
+
+    align-items: center;
+}
+
+aside {
+    grid-row: sidebar;
+    grid-column: sidebar;
+}
+
+footer {
+    grid-row: footer;
+    grid-column: footer;
+}
+
+.item {
+    background: lightcoral;
+    /* padding: 80px; */
+    height: 60px;
+  }
+
+  .item1 {
+      background : lightblue;
+
+
+    justify-self: center;}
+
+      /* grid-row: 2/4;
+      grid-column: 3/5; */
+    /* first start values of row & column and then end values */
+    /* grid-area: 2/3/span 3/5; */
+  
+    header, main, aside, footer {
+        border: 1px dashed;
+    }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>Header</header>
+    <main>    <div class="item1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        </main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+
+
+</div>
+</body>
+</html>
